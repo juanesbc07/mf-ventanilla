@@ -1,0 +1,56 @@
+<div>
+
+  <img src="assets/Images/WhatsApp%20Image%202023-01-23%20at%208.28.18%20PM.jpeg" width="30%" height="0.3%"
+       style="margin-left: 35%; margin-top: 1%">
+
+  <div class="contenedor-column" style="margin-top: 1%; width: 60%; margin-left: 20%">
+
+    <h2 style="color: aliceblue">
+      Escanear Producto:
+    </h2>
+
+    <div>
+
+      <div class="input-group">
+
+        <mat-form-field style="width: 300px">
+          <mat-label>ID: </mat-label>
+          <input  matInput placeholder="ID:" [(ngModel)]='id' class="gui-input form-control" autofocus
+                  (keyup.enter)="enviarID(id)" type="number">
+        </mat-form-field>
+
+        <button id="a" mat-raised-button color="accent" style="height: 80px; width: 80px; margin-left: 30px;" >
+          <img src="assets/Images/barcode.png" width="70%" height="70%" (click)="enviarID(idProducto.value)">
+        </button>
+
+
+
+      </div>
+
+
+
+    </div>
+
+
+    <h2 style="color: aliceblue">
+      Nombre: {{producto.nombre}}
+    </h2>
+    <h2 style="color: aliceblue">
+      Marca: {{producto.marca}}
+    </h2>
+    <h2 style="color: aliceblue">
+      Contenido Neto: {{producto.contenido_neto}}
+    </h2>
+    <h2 style="color: aliceblue">
+      Precio Compra:  {{precioCompra}}
+    </h2>
+    <h2 style="color: aliceblue">
+      Distribuidor: {{producto.distribuidor}}
+    </h2>
+    <h2 style="color: greenyellow; font-size: 44px">
+      Precio Venta: {{precioVenta}}
+    </h2>
+
+  </div>
+
+</div>

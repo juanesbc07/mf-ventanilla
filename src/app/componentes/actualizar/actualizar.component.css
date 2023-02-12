@@ -1,0 +1,19 @@
+.contenedor-column{
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.contenedor-row{
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}

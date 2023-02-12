@@ -1,0 +1,93 @@
+<div>
+
+  <img src="../../../assets/Images/WhatsApp%20Image%202023-01-23%20at%208.28.18%20PM.jpeg" width="30%" height="0.3%"
+       style="margin-left: 35%; margin-top: 1%">
+
+  <div class="contenedor-row">
+
+    <div class="contenedor-column" style="margin-top: 1%; width: 60%; margin-left: 12%">
+      <h2 style="color: aliceblue">
+        Registrar Producto:
+      </h2>
+      <mat-form-field style="width: 500px; height: 80px">
+        <mat-label>ID: </mat-label>
+        <input [(ngModel)]='id'  matInput placeholder="ID:" class="gui-input form-control" autofocus>
+      </mat-form-field>
+
+      <h2 style="color: aliceblue">
+        Nombre del producto:
+      </h2>
+      <mat-form-field style="width: 500px">
+        <mat-label>Nombre del producto: </mat-label>
+        <input [(ngModel)]='nombre'  matInput placeholder="Nombre del producto:">
+      </mat-form-field>
+      <h2 style="color: aliceblue">
+        Contenido Neto:
+      </h2>
+      <mat-form-field style="width: 500px">
+        <mat-label>Contenido Neto: </mat-label>
+        <input [(ngModel)]='contenidoNeto'  matInput placeholder="Contenido Neto:">
+      </mat-form-field>
+      <h2 style="color: aliceblue">
+        Marca:
+      </h2>
+      <mat-form-field style="width: 500px">
+        <mat-label>Marca: </mat-label>
+        <input [(ngModel)]='marca'  matInput placeholder="Marca:">
+      </mat-form-field>
+    </div>
+
+    <div class="contenedor-column" style="margin-top: 1%; width: 60%; margin-left: 1%">
+      <h2 style="color: aliceblue">
+        Precio Compra:
+      </h2>
+      <mat-form-field style="width: 500px">
+        <mat-label>Precio Compra: </mat-label>
+        <input [(ngModel)]='precioCompra' matInput placeholder="Precio Compra:" type="number">
+      </mat-form-field>
+
+      <button mat-raised-button color="accent" style="height: 40px; width: 500px; margin-top: 10px;"
+              (click)="calcular20(precioCompra);">
+        <div class="contenedor-row">
+          <h2 style="margin-top: 15px; margin-left: 17px; font-size: 22px">
+            Calcular 20%
+          </h2>
+        </div>
+      </button>
+
+      <h2 style="color: aliceblue">
+        Precio Sugerido Venta: {{precioSugeridoVenta}}
+      </h2>
+
+
+      <h2 style="color: aliceblue">
+        Precio Venta:
+      </h2>
+
+
+      <mat-form-field style="width: 500px">
+        <mat-label>Precio Venta: </mat-label>
+        <input [(ngModel)]='precioVenta' matInput placeholder="Precio Venta:">
+      </mat-form-field>
+      <h2 style="color: aliceblue">
+        Distribuidor:
+      </h2>
+      <mat-form-field style="width: 500px">
+        <mat-label>Distribuidor: </mat-label>
+        <input [(ngModel)]='distribuidor' matInput placeholder="Distribuidor:">
+      </mat-form-field>
+      <button mat-raised-button color="accent" style="height: 100px; width: 500px; margin-top: 30px;"
+              (click)="registrarProducto(id, nombre, contenidoNeto, marca, precioCompra, precioVenta, distribuidor);">
+        <div class="contenedor-row">
+          <img src="assets/Images/smartphone.png" width="15%" height="15%">
+          <h2 style="margin-top: 19px; margin-left: 20px; font-size: 30px">
+            Registrar Producto
+          </h2>
+        </div>
+      </button>
+
+    </div>
+  </div>
+
+
+</div>
